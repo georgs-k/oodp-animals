@@ -13,4 +13,10 @@ public interface Animal {
     void removeObstacle();
 
     void die();
+
+    void showInfo(String info);
+
+    void setState(AnimalState state);
+
+    void processState();
 }
