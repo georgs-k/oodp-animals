@@ -19,5 +19,12 @@ public class Main {
         Animal animal = animals.get(random.nextInt(3));
         animal.setState(AnimalState.values()[random.nextInt(3)]);
         animal.act();
+
+        System.out.println("\nDECORATOR DEMO\n");
+        animal = new TalkingAnimal(animal);
+        System.out.println("Our random animal has been wrapped in a decorator class.");
+        System.out.println("Now it will be talking before and after acting:\n");
+        animal.act();
+
     }
 }
