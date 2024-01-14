@@ -1,5 +1,8 @@
 public class Sparrow extends AbstractAnimal {
 
+    private final GrainStorage storage = new Nest(new Barn());
+
+
     public Sparrow(AnimalSpecies species, String name, int strength) {
         super(species, name, strength);
     }
@@ -16,7 +19,7 @@ public class Sparrow extends AbstractAnimal {
 
     @Override
     public void findFood() {
-        showInfo(name + " is getting to a barn full of grain...");
+        showInfo(name + " is getting to the " + storage.getGrainSource() + " full of grain...");
     }
 
     @Override

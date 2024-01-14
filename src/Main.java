@@ -26,5 +26,16 @@ public class Main {
         System.out.println("Now it will be talking before and after acting:\n");
         animal.act();
 
+        System.out.println("\nPROXY DEMO\n");
+        Animal anotherSparrow = animalFactory.createAnimal(AnimalSpecies.SPARROW, "Birdie", 2);
+        System.out.println("Sparrow gets hungry and flies to the nearer, but smaller, grain storage - the nest.");
+        System.out.println("The nest is a proxy, which redirects to the barn - a larger storage - if the grain has not been gathered yet.");
+        System.out.println("So, first time - to the barn, next times - to the nest:");
+        for (int i = 0; i < 3; i++) {
+            System.out.println();
+            anotherSparrow.setState(AnimalState.HUNGRY);
+            anotherSparrow.act();
+        }
+
     }
 }
