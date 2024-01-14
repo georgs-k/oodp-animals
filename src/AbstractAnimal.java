@@ -8,6 +8,8 @@ public abstract class AbstractAnimal implements Animal {
 
     protected AnimalState state;
 
+    protected Animal helpingFriend;
+
     public AbstractAnimal(AnimalSpecies species, String name, int strength) {
         this.species = species;
         this.name = name;
@@ -33,8 +35,19 @@ public abstract class AbstractAnimal implements Animal {
     }
 
     @Override
-    public void removeObstacle() {
-        showInfo(name + " is trying to remove an obstacle...");
+    public void removeObstacle(int weight) {
+        showInfo("A " + species + " named " + name + " is trying to remove an obstacle...");
+        if (weight <= strength) {
+            showInfo(name + " has managed to remove the obstacle!");
+            return;
+        }
+        showInfo("The obstacle is too heavy for " + name + ".");
+        if (helpingFriend != null) {
+            showInfo("A helping friend is being called...");
+            helpingFriend.removeObstacle(weight);
+            return;
+        }
+        showInfo("There's no friend to call. The obstacle hasn't been removed.");
     }
 
     @Override
@@ -91,5 +104,10 @@ public abstract class AbstractAnimal implements Animal {
     @Override
     public void setState(AnimalState state) {
         this.state = state;
+    }
+
+    @Override
+    public void setHelpingFriend(Animal helpingFriend) {
+        this.helpingFriend = helpingFriend;
     }
 }

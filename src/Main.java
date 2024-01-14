@@ -37,5 +37,13 @@ public class Main {
             anotherSparrow.act();
         }
 
+        System.out.println("\nCHAIN OF RESPONSIBILITY DEMO\n");
+        spider.setHelpingFriend(sparrow);
+        sparrow.setHelpingFriend(roe);
+        roe.setHelpingFriend(tiger);
+        System.out.println("Three animals have obtained helping friends.");
+        System.out.println("Now, if the obstacle is too heavy for one of them, a friend comes to help.\n");
+        spider.removeObstacle(4);
+
     }
 }

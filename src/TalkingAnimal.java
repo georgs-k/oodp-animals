@@ -32,8 +32,8 @@ public class TalkingAnimal implements Animal {
     }
 
     @Override
-    public void removeObstacle() {
-        animal.removeObstacle();
+    public void removeObstacle(int weight) {
+        animal.removeObstacle(weight);
     }
 
     @Override
@@ -76,5 +76,10 @@ public class TalkingAnimal implements Animal {
     @Override
     public void setState(AnimalState state) {
         animal.setState(state);
+    }
+
+    @Override
+    public void setHelpingFriend(Animal helpingFriend) {
+        animal.setHelpingFriend(helpingFriend);
     }
 }

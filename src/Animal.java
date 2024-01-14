@@ -10,7 +10,7 @@ public interface Animal {
 
     void sleep();
 
-    void removeObstacle();
+    void removeObstacle(int weight);
 
     void die();
 
@@ -27,4 +27,6 @@ public interface Animal {
     AnimalState getState();
 
     void setState(AnimalState state);
+
+    void setHelpingFriend(Animal helpingFriend);
 }
