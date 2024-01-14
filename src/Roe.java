@@ -1,7 +1,7 @@
 public class Roe extends AbstractAnimal {
 
-    public Roe(String name, int strength) {
-        super(name, strength);
+    public Roe(AnimalSpecies species, String name, int strength) {
+        super(species, name, strength);
     }
 
     @Override

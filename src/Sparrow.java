@@ -1,7 +1,7 @@
 public class Sparrow extends AbstractAnimal {
 
-    public Sparrow(String name, int strength) {
-        super(name, strength);
+    public Sparrow(AnimalSpecies species, String name, int strength) {
+        super(species, name, strength);
     }
 
     @Override

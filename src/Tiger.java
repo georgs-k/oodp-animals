@@ -1,7 +1,7 @@
 public class Tiger extends AbstractAnimal {
 
-    public Tiger(String name, int strength) {
-        super(name, strength);
+    public Tiger(AnimalSpecies species, String name, int strength) {
+        super(species, name, strength);
     }
 
     @Override

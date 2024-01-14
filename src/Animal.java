@@ -14,9 +14,17 @@ public interface Animal {
 
     void die();
 
+    void act();
+
     void showInfo(String info);
 
-    void setState(AnimalState state);
+    AnimalSpecies getSpecies();
 
-    void processState();
+    String getName();
+
+    int getStrength();
+
+    AnimalState getState();
+
+    void setState(AnimalState state);
 }

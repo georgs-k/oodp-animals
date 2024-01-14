@@ -1,12 +1,15 @@
 public abstract class AbstractAnimal implements Animal {
 
+    protected final AnimalSpecies species;
+
     protected final String name;
 
     protected final int strength;
 
     protected AnimalState state;
 
-    public AbstractAnimal(final String name, final int strength) {
+    public AbstractAnimal(AnimalSpecies species, String name, int strength) {
+        this.species = species;
         this.name = name;
         this.strength = strength;
         this.state = AnimalState.ACTIVE;
@@ -41,21 +44,8 @@ public abstract class AbstractAnimal implements Animal {
     }
 
     @Override
-    public void showInfo(String info) {
-        System.out.println(info);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ignoreException) { }
-    }
-
-    @Override
-    public void setState(AnimalState state) {
-        this.state = state;
-    }
-
-    @Override
-    public void processState() {
-        showInfo(name + " is " + state + ".");
+    public void act() {
+        showInfo("A " + species + " named " + name + " is " + state + ".");
         switch (state) {
             case ACTIVE:
                 getBusy();
@@ -76,5 +66,30 @@ public abstract class AbstractAnimal implements Animal {
                 return;
         }
         showInfo("Now " + name + " is " + state + ".");
+    }
+
+    @Override
+    public void showInfo(String info) {
+        System.out.println(info);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ignoreException) { }
+    }
+
+    @Override
+    public AnimalSpecies getSpecies() {return species;}
+
+    @Override
+    public String getName() {return name;}
+
+    @Override
+    public int getStrength() {return strength;}
+
+    @Override
+    public AnimalState getState() {return state;}
+
+    @Override
+    public void setState(AnimalState state) {
+        this.state = state;
     }
 }
