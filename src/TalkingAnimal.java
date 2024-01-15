@@ -49,6 +49,16 @@ public class TalkingAnimal implements Animal {
     }
 
     @Override
+    public AnimalMemento saveState() {
+        return animal.saveState();
+    }
+
+    @Override
+    public void restoreState(AnimalMemento memento) {
+        animal.restoreState(memento);
+    }
+
+    @Override
     public void showInfo(String info) {
         animal.showInfo(info);
     }

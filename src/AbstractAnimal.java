@@ -82,6 +82,16 @@ public abstract class AbstractAnimal implements Animal {
     }
 
     @Override
+    public AnimalMemento saveState() {
+        return new AnimalMemento(state);
+    }
+
+    @Override
+    public void restoreState(AnimalMemento memento) {
+        state = memento.getState();
+    }
+
+    @Override
     public void showInfo(String info) {
         System.out.println(info);
         try {
@@ -90,16 +100,24 @@ public abstract class AbstractAnimal implements Animal {
     }
 
     @Override
-    public AnimalSpecies getSpecies() {return species;}
+    public AnimalSpecies getSpecies() {
+        return species;
+    }
 
     @Override
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 
     @Override
-    public int getStrength() {return strength;}
+    public int getStrength() {
+        return strength;
+    }
 
     @Override
-    public AnimalState getState() {return state;}
+    public AnimalState getState() {
+        return state;
+    }
 
     @Override
     public void setState(AnimalState state) {

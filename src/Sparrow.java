@@ -2,7 +2,6 @@ public class Sparrow extends AbstractAnimal {
 
     private final GrainStorage storage = new Nest(new Barn());
 
-
     public Sparrow(AnimalSpecies species, String name, int strength) {
         super(species, name, strength);
     }

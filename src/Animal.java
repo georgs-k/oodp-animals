@@ -16,6 +16,10 @@ public interface Animal {
 
     void act();
 
+    AnimalMemento saveState();
+
+    void restoreState(AnimalMemento memento);
+
     void showInfo(String info);
 
     AnimalSpecies getSpecies();
