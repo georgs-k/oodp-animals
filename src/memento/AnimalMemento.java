@@ -1,3 +1,7 @@
+package memento;
+
+import common.AnimalState;
+
 public class AnimalMemento {
 
     private final AnimalState state;

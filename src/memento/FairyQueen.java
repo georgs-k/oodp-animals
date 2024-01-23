@@ -1,3 +1,7 @@
+package memento;
+
+import common.Animal;
+
 public class FairyQueen {
 
     private AnimalMemento memento;

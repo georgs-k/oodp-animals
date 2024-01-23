@@ -1,3 +1,5 @@
+package common;
+
 public class Roe extends AbstractAnimal {
 
     public Roe(AnimalSpecies species, String name, int strength) {

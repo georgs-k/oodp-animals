@@ -1,3 +1,12 @@
+package factoryMethod;
+
+import common.Animal;
+import common.AnimalSpecies;
+import common.Roe;
+import common.Sparrow;
+import common.Spider;
+import common.Tiger;
+
 public class AnimalFactory {
 
     public Animal createAnimal(final AnimalSpecies species, final String name, final int strength) {

@@ -1,6 +1,8 @@
-public enum AnimalSpecies {
+package common;
 
-    SPIDER, SPARROW, ROE, TIGER;
+public enum AnimalState {
+
+    ACTIVE, HUNGRY, SLEEPY, DEAD;
 
     @Override
     public String toString() {

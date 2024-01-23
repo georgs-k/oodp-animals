@@ -2,6 +2,13 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.List;
 
+import decorator.TalkingAnimal;
+import common.Animal;
+import common.AnimalSpecies;
+import common.AnimalState;
+import factoryMethod.AnimalFactory;
+import memento.FairyQueen;
+
 public class Main {
 
     public static void main(String[] args) {

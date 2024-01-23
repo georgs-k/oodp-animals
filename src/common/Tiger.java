@@ -1,3 +1,5 @@
+package common;
+
 public class Tiger extends AbstractAnimal {
 
     public Tiger(AnimalSpecies species, String name, int strength) {

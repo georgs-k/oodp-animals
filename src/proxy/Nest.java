@@ -1,3 +1,5 @@
+package proxy;
+
 public class Nest implements GrainStorage {
 
     private boolean haveBeenToBarn = false;

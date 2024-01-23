@@ -1,3 +1,10 @@
+package decorator;
+
+import common.Animal;
+import common.AnimalSpecies;
+import common.AnimalState;
+import memento.AnimalMemento;
+
 public class TalkingAnimal implements Animal {
 
     private final Animal animal;

@@ -1,3 +1,7 @@
+package common;
+
+import memento.AnimalMemento;
+
 public abstract class AbstractAnimal implements Animal {
 
     protected final AnimalSpecies species;

@@ -1,3 +1,7 @@
+package common;
+
+import memento.AnimalMemento;
+
 public interface Animal {
 
     void getBusy();

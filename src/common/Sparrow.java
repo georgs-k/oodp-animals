@@ -1,3 +1,9 @@
+package common;
+
+import proxy.Barn;
+import proxy.GrainStorage;
+import proxy.Nest;
+
 public class Sparrow extends AbstractAnimal {
 
     private final GrainStorage storage = new Nest(new Barn());

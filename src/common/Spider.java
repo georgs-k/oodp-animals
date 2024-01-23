@@ -1,3 +1,5 @@
+package common;
+
 public class Spider extends AbstractAnimal {
 
     public Spider(AnimalSpecies species, String name, int strength) {
