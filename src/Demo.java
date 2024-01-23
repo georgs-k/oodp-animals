@@ -11,7 +11,11 @@ import behavioral.memento.FairyQueen;
 
 public class Demo {
 
-    private static Animal animal, spider, sparrow, roe, tiger;
+    private static Animal animal;
+    private static Animal spider;
+    private static Animal sparrow;
+    private static Animal roe;
+    private static Animal tiger;
 
     private static final AnimalFactory animalFactory = new AnimalFactory();
 
