@@ -1,8 +1,8 @@
-package common;
+package domain;
 
-import proxy.Barn;
-import proxy.GrainStorage;
-import proxy.Nest;
+import structural.proxy.Barn;
+import structural.proxy.GrainStorage;
+import structural.proxy.Nest;
 
 public class Sparrow extends AbstractAnimal {
 

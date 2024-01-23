@@ -8,7 +8,7 @@ Project demonstrates the use of five GoF design patterns:
 * Chain of Responsibility
 * Memento
 
-Read the Main class. It's all in there.
+Read the Demo class. It's all in there.
 
 Run the app several times to see different results.
 

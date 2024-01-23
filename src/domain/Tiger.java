@@ -1,4 +1,4 @@
-package common;
+package domain;
 
 public class Tiger extends AbstractAnimal {
 

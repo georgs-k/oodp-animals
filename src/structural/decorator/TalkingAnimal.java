@@ -1,9 +1,9 @@
-package decorator;
+package structural.decorator;
 
-import common.Animal;
-import common.AnimalSpecies;
-import common.AnimalState;
-import memento.AnimalMemento;
+import domain.Animal;
+import domain.AnimalSpecies;
+import domain.AnimalState;
+import behavioral.memento.AnimalMemento;
 
 public class TalkingAnimal implements Animal {
 

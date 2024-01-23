@@ -1,6 +1,6 @@
-package common;
+package domain;
 
-import memento.AnimalMemento;
+import behavioral.memento.AnimalMemento;
 
 public abstract class AbstractAnimal implements Animal {
 

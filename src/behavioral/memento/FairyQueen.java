@@ -1,6 +1,6 @@
-package memento;
+package behavioral.memento;
 
-import common.Animal;
+import domain.Animal;
 
 public class FairyQueen {
 

@@ -1,4 +1,4 @@
-package common;
+package domain;
 
 public class Roe extends AbstractAnimal {
 

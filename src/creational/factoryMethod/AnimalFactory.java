@@ -1,11 +1,11 @@
-package factoryMethod;
+package creational.factoryMethod;
 
-import common.Animal;
-import common.AnimalSpecies;
-import common.Roe;
-import common.Sparrow;
-import common.Spider;
-import common.Tiger;
+import domain.Animal;
+import domain.AnimalSpecies;
+import domain.Roe;
+import domain.Sparrow;
+import domain.Spider;
+import domain.Tiger;
 
 public class AnimalFactory {
 

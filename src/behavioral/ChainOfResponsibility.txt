@@ -1,0 +1,1 @@
+Chain of Responsibility design pattern is implemented in domain classes and called from the Demo main class.

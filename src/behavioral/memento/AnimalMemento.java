@@ -1,6 +1,6 @@
-package memento;
+package behavioral.memento;
 
-import common.AnimalState;
+import domain.AnimalState;
 
 public class AnimalMemento {
 
